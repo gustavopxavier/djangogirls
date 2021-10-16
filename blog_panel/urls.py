@@ -1,8 +1,11 @@
 from django.urls import path
+from django.views.generic.base import TemplateView
 from . import views
 
 urlpatterns = [
-    path('', views.panel, name='PaginaInicial'),
-    # path('', views.panel_navbar, name='panel_navbar'),
+    path('navbar', views.navbar, name='navbar'),
+    path('sobre', views.sobre, name='sobre'),
+    path('modelo', views.modelo, name='modelo'),
+    # path('modelo', views.modelo, name='modelo'),
     # path('blogdashboard', views.blog_dashboard, name='blog_dashboard'),
 ]
